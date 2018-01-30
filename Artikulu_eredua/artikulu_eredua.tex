@@ -1,0 +1,77 @@
+%Dokumentu klasea
+\documentclass[12pt,a4paper]{article}
+
+
+%Iradokitako paketeak
+	\usepackage[utf8]{inputenc}  %tildeak
+	\usepackage[english]{babel} %hizkuntza
+	\usepackage[left=2.5cm, right=2.5cm, top=3cm, bottom=3cm, includeheadfoot]{geometry} %marjinak
+	\usepackage{hyperref} %linkak egiteko (\ref{} \url{}...)
+
+
+%Aukerazko pakete gehiago
+	\usepackage{lipsum}
+	\usepackage[final]{graphicx} %irudiak
+	\usepackage{color}  %Kolorea ipini \color{red}...\color{black}
+	\usepackage{makeidx} % aurkibidea egiteko
+	\linespread{1}%linea arteko espaziadoa
+	\usepackage{enumitem} %%itemak separatzeko 
+		\setlength{\parskip}{1em} %parrafoen arteko espazioa
+	
+	%alias 
+		\newcommand{\grad}{$^{\circ}$} %alias bat horrela egiten da
+	
+	%%% Irudi bat baino gehiago nahi badira
+		\usepackage{subcaption} %to insert several images at a time
+
+	%tipografia
+		%\usepackage[sfdefault,scaled=.85]{FiraSans} %tipografia
+		%\usepackage{newtxsf} %tipografia
+	
+	%Irudiak testuarekin bat
+		%\usepackage{wrapfig}
+		%\usepackage[font=small,labelfont=bf]{caption} 
+
+	
+	%Erreferentziak egiteko 
+		%(.bib batean gorde behar dira fitxero berdinean)
+		\usepackage{cite}
+		%beste aukera bat:
+		%\usepackage[backend=bibtex, citestyle=verbose-trad1, citepages=omit, bibstyle=verbose]{biblatex} 
+
+	
+	%Taulak
+		\usepackage{longtable} %garrantzitsua
+		\usepackage{lscape} % horizontalean ipintzeko 
+		\usepackage{changepage}
+	
+	\begin{document}
+
+
+%AZALA
+{%%%
+	%\sffamily tipografia aldatuta
+	  \centering
+	   \Large
+	~\vspace{\fill}
+
+ 	%tamaina(HUGE, LARGE...)
+	\vspace{3.5cm} 
+	{\LARGE TITULO NAGUSIA} \\
+	\vspace{3.5cm}
+	Hemen azpititulo bat\\
+	\vspace{3.5cm}
+	Idazlea: Ni neu\\
+	\vspace{\fill}
+	2019
+}
+
+
+\newpage 
+\lipsum %parrafo aleatorioak
+
+\tableofcontents
+	\listoffigures
+	\listoftables	
+
+\end{document}
